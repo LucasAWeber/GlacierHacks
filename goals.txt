@@ -1,0 +1,10 @@
+Read
+1
+Sleep
+0
+Homework
+0
+Study
+1
+Work out
+0
