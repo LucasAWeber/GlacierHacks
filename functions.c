@@ -8,7 +8,6 @@ int readGoalFile(goal * goals, char * ptr)
     while (!feof(fptr))
     {
         i++;
-        //goals = realloc(goals, sizeof(goal) * (i+1));
         fgets(goals[i-1].goalName, MAX_LEN, fptr);
         goals[i-1].goalName[strcspn(goals[i-1].goalName, "\n")] = 0;
         fgets(temp, MAX_LEN, fptr);
@@ -20,6 +19,8 @@ int readGoalFile(goal * goals, char * ptr)
         {
             goals[i-1].completed = false;
         }
+        fgets(temp, MAX_LEN, fptr);
+        goals[i-1].numCompleted = atoi(temp);
     }
     fclose(fptr);
     return i;
