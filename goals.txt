@@ -1,14 +1,14 @@
 Read
-0
+1
 30
 Sleep
 0
 2
 Homework
-0
+1
 11
 Study
-0
+1
 150
 Work out
 0

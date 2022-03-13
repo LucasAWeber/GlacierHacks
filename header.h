@@ -16,3 +16,8 @@ typedef struct Goal
 } goal;
 
 int readGoalFile(goal * goals, char * ptr);
+void printAllTasks(int numGoals, goal * goals);
+void printIncTasks(int numGoals, goal * goals);
+void printCompTasks(int numGoals, goal * goals);
+int addNewTask(int numGoals, goal * goals);
+void saveTasks(int numGoals, goal * goals, char * ptr);
